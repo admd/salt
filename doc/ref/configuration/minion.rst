@@ -2068,6 +2068,21 @@ List of states to run when the minion starts up if ``startup_states`` is set to 
 
 .. conf_minion:: top_file
 
+``start_event_grains``
+------------
+
+Default: ``[]``
+
+List of grains to pass in start event when minion starts up.
+
+.. code-block:: yaml
+
+    start_event_grains:
+      - machine_id
+      - id
+
+.. conf_minion:: top_file
+
 ``top_file``
 ------------
 
